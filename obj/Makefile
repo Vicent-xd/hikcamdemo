@@ -21,10 +21,10 @@ OBJFILE  = $(foreach dir,$(OBJS),$(notdir $(dir)))
 OBJSPATH = $(addprefix obj/,$(OBJFILE)) 
 
 LIBPATH = ../lib/
-LIBS = -Wl,-rpath=./:./HCNetSDKCom:../lib -lhcnetsdk -lPlayCtrl
+LIBS = -Wl,-rpath=./:./HCNetSDKCom:../lib -lhcnetsdk -lPlayCtrl `pkg-config --libs opencv4 2> /dev/null || pkg-config --libs opencv`
 #LIBS += -lopencv4
-thirdparty_root=/usr/lib/x86_64-linux-gnu/
-LIBS += -L${thirdparty_root} -lopencv_imgcodecs -lopencv_dnn -lopencv_imgproc -lopencv_core
+#thirdparty_root=/usr/lib/x86_64-linux-gnu/
+#LIBS += -L${thirdparty_root} -lopencv_imgcodecs -lopencv_dnn -lopencv_imgproc -lopencv_core
 EXE = ../lib/sdkTest
 
 $(EXE):$(OBJFILE)

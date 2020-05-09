@@ -188,7 +188,7 @@ int Demo_RealPlay(LONG lUserID)
         NET_DVR_Cleanup();  
         return -1;
     }
-    sleep(500);   //second
+    //sleep(500);   //second
     return 0;
 }
 int main()
@@ -236,7 +236,8 @@ int main()
     {
         printf("\n");
         printf("Input 1, Test RealPlay\n");
-        printf("      a, Test PTZControl LEFT\n");
+        printf("      w/s/a/d, Test PTZControl UP,DOWN,LEFT,RIGHT\n");
+        printf("      r/t/f/g, Test PTZControl UP_LEFT,UP_RIGHT,DOWN_LEFT,DOWN_RIGHT\n");
         printf("      p, Test PTZControl STOP\n");
         printf("      q, Quit.\n");
         
@@ -247,11 +248,32 @@ int main()
         {
         case '1':
             Demo_RealPlay(lUserID);
-            break;     
-        case 'a':
+            break; 
+        case 'w'://云台上
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,TILT_UP,0,4); //Setting params.
+            break;                      
+        case 's'://云台下
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,TILT_DOWN,0,4); //Setting params.
+            break;                  
+        case 'a'://云台左
             NET_DVR_PTZControlWithSpeed(lRealPlayHandle,PAN_LEFT,0,4); //Setting params.
             break;
-        case 'p':
+        case 'd'://云台右
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,PAN_RIGHT,0,4); //Setting params.
+            break;        
+        case 'r'://左上
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,UP_LEFT,0,4); //Setting params.
+            break;   
+        case 't'://右上
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,UP_RIGHT,0,4); //Setting params.
+            break;   
+        case 'f'://左下
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,DOWN_LEFT,0,4); //Setting params.
+            break;   
+        case 'g'://右下
+            NET_DVR_PTZControlWithSpeed(lRealPlayHandle,DOWN_RIGHT,0,4); //Setting params.
+            break;                           
+	      case 'p'://STOP
             NET_DVR_PTZControlWithSpeed(lRealPlayHandle,PAN_LEFT,1,4); //Setting params.
             break;            
         default:
@@ -263,7 +285,7 @@ int main()
     NET_DVR_StopRealPlay(lRealPlayHandle);
     NET_DVR_Logout_V30(lUserID);
     NET_DVR_Cleanup();
-    
+    printf("Logout SUCCESS\n");
     return 0;
 
 }

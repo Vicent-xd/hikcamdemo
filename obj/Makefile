@@ -21,7 +21,7 @@ OBJFILE  = $(foreach dir,$(OBJS),$(notdir $(dir)))
 OBJSPATH = $(addprefix obj/,$(OBJFILE)) 
 
 LIBPATH = ../lib/
-LIBS = -Wl,-rpath=./:./HCNetSDKCom:../lib -lhcnetsdk -lPlayCtrl `pkg-config --libs opencv4 2> /dev/null || pkg-config --libs opencv`
+LIBS = -Wl,-rpath=./:./HCNetSDKCom:../lib -lhcnetsdk -lPlayCtrl -lpthread `pkg-config --libs opencv4 2> /dev/null || pkg-config --libs opencv`
 #LIBS += -lopencv4
 #thirdparty_root=/usr/lib/x86_64-linux-gnu/
 #LIBS += -L${thirdparty_root} -lopencv_imgcodecs -lopencv_dnn -lopencv_imgproc -lopencv_core
@@ -29,7 +29,8 @@ EXE = ../lib/sdkTest
 
 $(EXE):$(OBJFILE)
 	$(CXX) -L$(LIBPATH)  -o $(EXE) $(OBJFILE) $(INCPATHS) $(LIBS)
-
+#libhikcam.so:$(OBJFILE)
+	$(CXX) -L$(LIBPATH) $(OBJFILE) $(INCPATHS) $(LIBS) -fPIC -o ../lib/libhikcam.so
 $(OBJFILE):%.o:%.cpp
 	$(CXX)  -c -o $@ $<  $(INCPATHS) -pipe -g -Wall
 

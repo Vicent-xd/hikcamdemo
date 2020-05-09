@@ -1,32 +1,24 @@
-[2020-05-09 10:34:04.490][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47330
-[2020-05-09 10:34:08.263][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47332
-[2020-05-09 10:34:13.716][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47334
-[2020-05-09 10:34:21.177][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47336
-[2020-05-09 10:34:22.763][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47338
-[2020-05-09 10:34:28.329][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47340
-[2020-05-09 10:34:29.458][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47342
-[2020-05-09 10:34:31.906][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47344
-[2020-05-09 10:34:35.073][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47346
-[2020-05-09 10:34:37.462][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47348
-[2020-05-09 10:34:42.627][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47350
-[2020-05-09 10:34:44.577][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47352
-[2020-05-09 10:34:47.917][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47354
-[2020-05-09 10:34:50.909][ERR]  GetCAPath, Failed, Invalid pPath
-[2020-05-09 10:34:50.927][ERR]  GetCAPath, Failed, Invalid pPath
-[2020-05-09 10:34:51.367][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47356
-[2020-05-09 10:34:53.582][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47358
-[2020-05-09 10:34:56.030][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47362
-[2020-05-09 10:35:01.720][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47364
-[2020-05-09 10:35:10.725][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47366
-[2020-05-09 10:35:12.878][INF] Private connect 172.17.1.99:8000 sock=50 this=0x66606a88 cmd=0x30203 port=47368
-[2020-05-09 10:35:50.154][DBG] CUser::SendHeartWithExceptCB[0]
-[2020-05-09 10:35:51.887][ERR]  GetCAPath, Failed, Invalid pPath
-[2020-05-09 10:35:51.894][ERR]  GetCAPath, Failed, Invalid pPath
-[2020-05-09 10:35:59.479][DBG] CStreamConvert::UnloadConvertLib, m_iInitCount = 0
-[2020-05-09 10:35:59.479][INF] COM_Logout[0][1]
-[2020-05-09 10:35:59.479][DBG] CUserMgr::UnRegisterHeartProxy[0]
-[2020-05-09 10:35:59.496][INF] Private connect 172.17.1.99:8000 sock=36 this=0x666064a4 cmd=0x10100 port=47372
-[2020-05-09 10:35:59.499][INF] CTransUnitMgr::UnloadTransUnitLib
-[2020-05-09 10:35:59.898][ERR] CSSLTrans::UnloadSSLLib() SSLLibUnlock s_hEAYCom failed3 [syserr: 115]
-[2020-05-09 10:35:59.898][ERR] CSSLTrans::UnloadSSLLib() SSLLibUnlock failed4 [syserr: 115]
-[2020-05-09 10:35:59.898][ERR] CSSLTrans::UnloadSSLLib failed
+[2020-05-09 21:27:11.180][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39400
+[2020-05-09 21:27:14.838][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39402
+[2020-05-09 21:27:20.578][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39404
+[2020-05-09 21:27:34.168][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39406
+[2020-05-09 21:27:36.634][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39408
+[2020-05-09 21:27:40.384][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39410
+[2020-05-09 21:27:44.597][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39412
+[2020-05-09 21:27:46.217][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39414
+[2020-05-09 21:27:49.631][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39416
+[2020-05-09 21:27:51.973][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39418
+[2020-05-09 21:27:53.173][ERR]  GetCAPath, Failed, Invalid pPath
+[2020-05-09 21:27:53.208][ERR]  GetCAPath, Failed, Invalid pPath
+[2020-05-09 21:27:53.763][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39420
+[2020-05-09 21:27:55.607][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39422
+[2020-05-09 21:27:57.885][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39424
+[2020-05-09 21:27:59.223][INF] Private connect 172.17.1.99:8000 sock=50 this=0x7a92ca88 cmd=0x30203 port=39426
+[2020-05-09 21:28:20.343][DBG] CStreamConvert::UnloadConvertLib, m_iInitCount = 0
+[2020-05-09 21:28:20.343][INF] COM_Logout[0][1]
+[2020-05-09 21:28:20.343][DBG] CUserMgr::UnRegisterHeartProxy[0]
+[2020-05-09 21:28:20.345][INF] Private connect 172.17.1.99:8000 sock=36 this=0x7a92c4a4 cmd=0x10100 port=39430
+[2020-05-09 21:28:20.349][INF] CTransUnitMgr::UnloadTransUnitLib
+[2020-05-09 21:28:20.822][ERR] CSSLTrans::UnloadSSLLib() SSLLibUnlock s_hEAYCom failed3 [syserr: 115]
+[2020-05-09 21:28:20.822][ERR] CSSLTrans::UnloadSSLLib() SSLLibUnlock failed4 [syserr: 115]
+[2020-05-09 21:28:20.822][ERR] CSSLTrans::UnloadSSLLib failed
